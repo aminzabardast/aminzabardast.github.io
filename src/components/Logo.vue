@@ -27,34 +27,34 @@
         data () {
             return {
                 title: 'Amin Zabardast',
-                smallMsg: 'This is empty for now.',
+                smallMsg: 'This is empty for now but the wheels are in motion',
                 links: [
                     {
-                        order: 1,
+                        order: 5,
                         icon: ['fas', 'envelope'],
                         tooltip: 'zabardast.amin@metu.edu.tr',
                         href: 'mailto:zabardast.amin@metu.edu.tr'
                     },
                     {
-                        order: 2,
+                        order: 1,
                         icon: ['fab', 'github'],
                         tooltip: '/AminZabardast',
                         href: 'http://github.com/AminZabardast'
                     },
                     {
-                        order: 3,
+                        order: 2,
                         icon: ['fab', 'linkedin'],
                         tooltip: '/AminZabardast',
                         href: 'http://linkedin.com/in/AminZabardast'
                     },
                     {
-                        order: 4,
+                        order: 3,
                         icon: ['fab', 'twitter'],
                         tooltip: '@AminZabardast',
                         href: 'http://twitter.com/AminZabardast'
                     },
                     {
-                        order: 5,
+                        order: 4,
                         icon: ['fab', 'instagram'],
                         tooltip: '@AminZabardast',
                         href: 'http://instagram.com/AminZabardast'
