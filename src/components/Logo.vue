@@ -5,7 +5,7 @@
                 <p class="display-3 logo">Amin Zabardast</p>
             </v-flex>
             <v-flex xs1>
-                <p class="subheading">This is empty for now</p>
+                <p class="subheading">This is <i>still</i> empty for now</p>
             </v-flex>
         </v-layout>
     </v-container>
