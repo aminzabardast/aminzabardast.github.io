@@ -3,14 +3,23 @@
         <v-layout align-center justify-center wrap column>
             <v-flex xs1>
 
-                <p class="display-3 logo">{{title}}</p>
+                <v-avatar size="250">
+                    <img :src="require('../assets/amin2.jpg')" alt="avatar">
+                </v-avatar>
 
-                <p class="subheading">{{smallMsg}}</p>
+                <p class="display-2 logo mt-5 mb-4 grey--text text--darken-3">{{title}}</p>
+
+                <p class="pa-0 ma-0 grey--text text--darken-2 title mb-2"
+                   v-for="(msg, idx) in smallMsgs"
+                   :key="idx"
+                >
+                    {{msg}}
+                </p>
 
                 <v-tooltip bottom v-for="link in orderedLinks" :key="link.order">
                     <template v-slot:activator="{ on }">
                         <v-btn fab flat v-on="on" :href="link.href" target="_blank">
-                            <font-awesome-icon class="display-1" :icon="link.icon"/>
+                            <font-awesome-icon class="display-1 grey--text text--darken-3" :icon="link.icon"/>
                         </v-btn>
                     </template>
                     <span>{{link.tooltip}}</span>
@@ -26,8 +35,12 @@
         name: "Logo",
         data () {
             return {
-                title: 'Amin Zabardast',
-                smallMsg: 'This is empty for now but the wheels are in motion',
+                title: "I'm Amin Zabardast",
+                smallMsgs: [
+                    "I mess around with data, I enjoy computer graphics,",
+                    "and I like combining these two.",
+                    "An advocate of any creative process."
+                ],
                 links: [
                     {
                         order: 5,
@@ -74,6 +87,7 @@
 
 <style scoped>
     .logo {
-        font-family: 'Satisfy', cursive !important;
+        font-family: sans-serif;
+        font-weight: bold;
     }
 </style>

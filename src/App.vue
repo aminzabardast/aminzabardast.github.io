@@ -1,18 +1,20 @@
 <template>
   <v-app>
-    <v-content style="background: #dc7ded">
-      <Logo/>
+    <TopLine/>
+    <v-content class="body">
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import Logo from './components/Logo'
+
+import TopLine from "./components/TopLine";
 
 export default {
   name: 'App',
   components: {
-    Logo
+    TopLine
   },
   data () {
     return {
@@ -21,3 +23,9 @@ export default {
   }
 }
 </script>
+
+<style>
+  .body {
+    background-color: #def0ec
+  }
+</style>
