@@ -1,17 +1,17 @@
 <template>
   <div>
-    <Logo/>
+    <Header/>
     <Footer/>
   </div>
 </template>
 
 <script>
-  import Logo from '../components/Logo'
+  import Header from '../components/Header'
   import Footer from '../components/Footer'
 
   export default {
     components: {
-      Logo,
+      Header,
       Footer
     }
   }
