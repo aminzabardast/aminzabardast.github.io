@@ -1,12 +1,12 @@
 <template>
     <v-container bg text-xs-center class="pa-0">
         <v-layout align-start justify-center row>
-            <v-flex xs12 sm12 md8 lg6>
+            <v-flex xs12 sm9 md8 lg6>
 
                 <v-tooltip bottom v-for="link in orderedLinks" :key="link.order">
                     <template v-slot:activator="{ on }">
                         <v-btn fab flat v-on="on" :href="link.href" target="_blank">
-                            <font-awesome-icon class="display-1 grey--text text--darken-3" :icon="link.icon"/>
+                            <font-awesome-icon class="display-1 text--darken-3" :icon="link.icon"/>
                         </v-btn>
                     </template>
                     <span>{{link.tooltip}}</span>

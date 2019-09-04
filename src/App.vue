@@ -26,7 +26,7 @@ export default {
 
 <style>
   .body {
-    /* Chosen Color Palette: https://encycolorpedia.com/00a693 */
-    background-color: #def0ec
+    /*Chosen Color Palette: https://encycolorpedia.com/00a693*/
+    /*background-color: #ffffff*/
   }
 </style>
