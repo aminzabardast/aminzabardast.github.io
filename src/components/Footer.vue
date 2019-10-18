@@ -1,11 +1,11 @@
 <template>
-    <v-container bg text-xs-center class="pa-0">
+    <v-container bg text-xs-center class="pa-0 fluid footer-background">
         <v-layout align-start justify-center row>
-            <v-flex xs12 sm9 md8 lg6>
+            <v-flex xs12 sm12 md10 lg10>
 
                 <v-tooltip bottom v-for="link in orderedLinks" :key="link.order">
                     <template v-slot:activator="{ on }">
-                        <v-btn fab flat v-on="on" :href="link.href" target="_blank">
+                        <v-btn fab flat v-on="on" :href="link.href" target="_blank" dark>
                             <font-awesome-icon class="display-1 text--darken-3" :icon="link.icon"/>
                         </v-btn>
                     </template>
@@ -67,5 +67,7 @@
 </script>
 
 <style scoped>
-
+    .footer-background {
+        background-color: #00a693;
+    }
 </style>
